@@ -1,0 +1,36 @@
+{% extends "main.html" %}
+
+{% block content %}
+
+		<div class="category-item column">
+			<h3 class="category-item_header">
+				<span class="h_title">Edit Item</span>
+				<span class="h_bar"></span>
+			</h3>
+			<form action="#" method="post" class="category-item_form">
+				<dl>
+					<dt>Food Name:</dt>
+					<dd>
+						<input type="text" name="name" value="{{categoryItem.name}}" class="form_input">
+					<br>
+					<dt>Description:</dt>	
+					<dd>
+						<textarea name="description" id="" cols="30" rows="10" class="form_textarea">{{categoryItem.description}}
+						</textarea>
+					</dd>
+					<dt>Category:</dt>
+					<dd>
+						<select class="form_select" name="category">
+						{% for category in categories %}
+							<option value="{{category.id}}">{{category.name}}</option>
+						{% endfor %}
+						</select>
+					</dd>
+				</dl>
+				
+				<a href="{{url_for('listCategoryItem', catalog_id = categoryItem.category_id ,item_id = categoryItem.id )}}" class="button button-outline">Back</a>
+				<input type="submit" value="Save">
+			</form>
+		</div>
+
+{% endblock %}

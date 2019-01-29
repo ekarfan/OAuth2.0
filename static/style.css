@@ -1,0 +1,97 @@
+body, html {
+    width: 100%;
+    height: 100%;
+}
+.row.vertical-divider {
+  overflow: hidden;
+}
+.row.vertical-divider > div[class^="col-"] {
+  text-align: center;
+  padding-bottom: 100px;
+  margin-bottom: -100px;
+  border-left: 1px solid #F2F7F9;
+  border-right: 1px solid #F2F7F9;
+}
+.row.vertical-divider div[class^="col-"]:first-child {
+  border-left: none;
+}
+.row.vertical-divider div[class^="col-"]:last-child {
+  border-right: none;
+}
+
+.navbar-default {
+  background-color: black;
+  width: 100%;
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-brand {
+  color: #FFFFFF;
+}
+
+
+.content .container{
+   	background: white;
+	margin-top: 6rem;
+	margin-bottom: 2rem;
+	padding: 0.5rem;
+	border: .1rem solid #d1d1d1;
+}
+
+
+#signinButton {
+	color: black;
+	background: #da4635;
+	border-color: #da4635;
+	text-align: center;
+	padding: 1.5rem 1.5rem;
+}
+
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -5em;
+  background-color: #f4f5f6;
+}
+
+.list_add {
+  font-size: .8rem;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  padding: 0 1.5rem;
+}
+
+.category-item_header .h_title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: block;
+  text-transform: capitalize;
+}
+
+.category-item_header .h_bar {
+  border-bottom: .5rem solid #9b4dca;
+  height: .1rem;
+  display: block;
+  width: 3rem;
+}
+
+.category-item_description {
+  margin-bottom: 1rem;
+}
+
+
+h3 {
+	font-size: 16px;
+	color: balck;
+	line-height: 10px;
+}
+
+
+
+
+
+
+ul {
+	list-style-type: none;
+}
