@@ -10,7 +10,8 @@ def database_init():
 
 
 # Clear database
-	engine = create_engine('sqlite:///itemcatalog.db?check_same_thread=False')
+	#engine = create_engine('sqlite:///itemcatalog.db?check_same_thread=False')
+	engine = create_engine('postgresql://catalog:password@localhost/catalog')
 	Base.metadata.drop_all(engine)
 	Base.metadata.create_all(engine)
 
