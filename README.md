@@ -14,6 +14,12 @@
 
 `cd /vagrant`
 
+## Setup DB
+
+`python database_setup.py`
+
+ `python database_init.py
+ 
 ## Then run the application:
 
 `python application.py`
